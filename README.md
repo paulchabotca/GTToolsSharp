@@ -42,7 +42,7 @@ Important things to know:
 2. Table of Contents file (*TOC*) which contains all of file entries (each having an *entry number*) that indicates where an original file is located in the scrambled PDIPFS - location of TOC determined by the master file.
 3. The *entry number* is used to determine the PDIPFS scrambled path.
 
-Files packed as new with means that new entries numbers are appended to last one in *TOC* which are the same original paths, but with new entry numbers thus new files are generated, and the older file entries used for these paths are unused. That means that upon packing, new scrambled file names are generated, and do not interfere with any of the other original game files. The only file that is edited is the *Main Volume Header File* which is always located at `PDIPFS/K/4D`.
+Files packed as new. Meaning, new entry numbers are appended to last one in *TOC*, which are the same original paths. The new entry numbers are genereated files. The older file entries used for these paths are unused. This means that upon packing, new scrambled file names are generated, and do not interfere with any of the other original game files. The only file that is edited is the *Main Volume Header File* which is always located at `PDIPFS/K/4D`.
 
 The advantage of doing this is that players of your mods only have to backup this one file when applying your mods instead of all the files which would overwrite. To revert, players can simply revert their original `PDIPFS/K/4D` file. You can provide the original `PDIPFS/K/4D` file inside your mod as a way for them to revert if they did not back it up.
 
